@@ -1,15 +1,19 @@
-# taxi_trip_regression
+# Hotel Booking Cancellation
 # Abstract 
-The second project for Data science Bootcamp T5 on Ordinary Least Squares regression (OLS) or Regression. Through the project by building a machine learning regression model. The main purpose of this project is to provide predictions for the price of trips in NYC by using a yellow taxi. Using python libraries such as Pandas, seaborn, and other useful libraries. The first phase of the project was divided into a dataframe for training, verification, and testing on the ratios 98%, 1%, and 1% respectively. The second phase was to clean, prepare, and handle data, check for null and duplicates, find anomalies and features that don't need it, and drop them. The third phase is to build the models and select the best score of R2 and least errors (RMSE, MAE).
+The goal of the project is to analyze cancellations in hotels, whether resorts or city hotels, to help devise new methods to reduce the consequent losses.
+Cancellations limit the production of accurate forecasts, a critical tool in terms of revenue management performance. To circumvent the problems caused by booking cancellations, hotels implement rigid cancellation policies and overbooking strategies, which can also have a negative influence on revenue and reputation
+Using data sets from cancellation of hotel booking demand as a problem in the scope of data science, the results allow hotel managers to accurately predict net demand and build better forecasts, improve cancellation policies, define better overbooking tactics and thus use more assertive pricing and inventory allocation strategies, the used data in this project are provided by Kaggle.
+
 
 
 # Design
-By applying the dataset on machine learning models such as linear regression, polynomial regression, ridge regression, lasso regression, ElasticNet, and Knn. to predict the prices of the trips. 
+ This project is one of the T5 Data Science BootCamp requirements. Data provided by Kaggle
+ has been used in this project. 
 
 
 
 # Data
-Dataset for yellow taxi trip in NYC in July 2021 This data dictionary describes yellow taxi trip data. The data base about 2,821,515 trips with 18 features like (trip_distance, RatecodeID, payment_type, etc) which main this project is Multivariate regression. The target in this project is Total amount. 
+The dataset is provided in .CSV format , its contains a single file which compares various booking information, this data set contains booking information for a city hotel and a resort hotel. and includes 119390 rows and 32 columns such as cancellation, deposit type, lead time, and the total of special requests, among other things.
 
 
 
@@ -17,16 +21,15 @@ Dataset for yellow taxi trip in NYC in July 2021 This data dictionary describes 
 
 
 # Algorithms
-Preparing the data, Feature Engineering, and selection: 
-1. Exploration the data and visualization.
-2. Feature Selection by calculate the features correlation.
-3. Engineering by converting categorical values to dummy.
 
-Methods:
-Linear regression, polynomial regression, ridge regression, lasso regression, ElasticNet, and Knn. have been used to predict the prices of the trips. By splitting the dataset to train set, validation set, and test set to measure each model scores, the best model R2 score shows in polynomial regression. 
+1. Cleaning the dataset by dropping feature that won't be relevant in the analysis, which is the company column, and dropping Null rows.
+2. Cleaning the average_daily_rate column by dropping the negative values.
+3. Cleaning by dropping the duplicates.
+4. Rename the column ADR to average_daily_rate to be more readable.
+
+
 
 # Tools
-•	Python and Jupyter Notebook.
-•	Numpy and Pandas for data manipulation. 
-•	Matplotlib and Seaborn for plotting visualization.
-•	Sklearn for ML algorithms.
+•	Numpy and Pandas for data manipulation.
+•	Matplotlib and Seaborn for plotting
+
