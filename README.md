@@ -31,5 +31,6 @@ The dataset is provided in .CSV format , its contains a single file which compar
 
 # Tools
 •	Numpy and Pandas for data manipulation.
+
 •	Matplotlib and Seaborn for plotting.
 
